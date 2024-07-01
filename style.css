@@ -1,0 +1,6 @@
+@import './fonts.css';
+
+:root {
+  font-family: 'SF Pro Text', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
