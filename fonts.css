@@ -15,3 +15,9 @@
   src: url('./fonts/SFProText-Regular.ttf');
   font-weight: 400;
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Bold.ttf');
+  font-weight: 700;
+}

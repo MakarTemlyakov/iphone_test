@@ -1,6 +1,199 @@
 @import './fonts.css';
 
+html,
+body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
 :root {
+  --iphone-se: 320px;
+  --iphone-11-pro: 375px;
+  --iphone-14: 390px;
+  --iphone-14-pro: 393px;
+  --iphone-8-plus: 414px;
+  --iphone-14-pro-max: 430px;
+  --color-link-1: #ffffff;
+  --color-link-2: rgba(255, 255, 255, 0.507);
+  --color-text-1: #ffffff;
+  --color-text-2: #141131;
+  --backround-color-1: #ffffff;
+  --border-color-1: #ffffff;
   font-family: 'SF Pro Text', Arial, Helvetica, sans-serif;
   font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 327px;
+  margin: auto;
+}
+
+.banner {
+  padding-top: 16px;
+  min-height: 100%;
+  height: auto;
+  background-image: image-set(
+    './images/bg.png' 1x,
+    './images/bg@2x.png' 2x,
+    './images/bg@3x.png' 3x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-icon-link {
+  display: block;
+  width: 12px;
+  height: 1px;
+  margin-bottom: 69px;
+}
+.banner__title {
+  color: var(--color-text-1);
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.close-icon {
+  display: block;
+  width: inherit;
+  height: inherit;
+  transform: rotate(45deg);
+  background-color: var(--color-link-1);
+  opacity: 0.4;
+}
+
+.close-icon::after {
+  display: block;
+  content: '';
+  width: inherit;
+  height: inherit;
+  transform: rotate(90deg);
+  background-color: white;
+}
+.access-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.access-list__item {
+  position: relative;
+}
+
+.access-list__img {
+  width: 100%;
+}
+
+.access-list__text {
+  padding: 10px;
+  width: 90%;
+  position: absolute;
+  font-size: 11px;
+  color: var(--color-text-1);
+  text-align: left;
+  top: 65%;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.option-item,
+.option-item--active {
+  position: relative;
+  padding: 10px 30px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--color-text-1);
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.option-item {
+  background-color: rgba(255, 255, 255, 0.084);
+}
+
+.option-item--active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--border-color-1);
+}
+
+.option-item__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--color-text-1);
+}
+
+.option-item__per-year {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-1);
+}
+
+.option-item__best-offer {
+  font-size: 13px;
+  text-transform: uppercase;
+  position: absolute;
+  padding: 2px 15px;
+  top: -12px;
+  right: 20px;
+  display: block;
+  background-color: var(--backround-color-1);
+  color: var(--color-text-2);
+  border-radius: 32px;
+  font-family: 'Roboto';
+}
+
+.per-week-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-2);
+  background-color: var(--backround-color-1);
+  text-transform: capitalize;
+  border-radius: 32px;
+  padding: 16px 0;
+  min-width: 100%;
+  border: none;
+  margin-bottom: 28px;
+}
+
+.navigation-list {
+  display: flex;
+  color: rgba(255, 255, 255, 0.507);
+  justify-content: center;
+  gap: 32px;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.navigation-link {
+  color: var(--color-link-2);
+  text-decoration: none;
 }
