@@ -12,13 +12,14 @@ body {
   --iphone-se: 320px;
   --iphone-11-pro: 375px;
   --iphone-14: 390px;
-  --iphone-14-pro: 393px;
+  --iphone-14-plus: 393px;
   --iphone-8-plus: 414px;
   --iphone-14-pro-max: 430px;
   --color-link-1: #ffffff;
   --color-link-2: rgba(255, 255, 255, 0.507);
   --color-text-1: #ffffff;
   --color-text-2: #141131;
+  --color-text-3: #1a1921;
   --backround-color-1: #ffffff;
   --border-color-1: #ffffff;
   font-family: 'SF Pro Text', Arial, Helvetica, sans-serif;
@@ -38,15 +39,20 @@ li {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
-  max-width: 327px;
+  max-width: 90%;
   margin: auto;
+  min-height: 100%;
 }
 
 .banner {
   padding-top: 16px;
   min-height: 100%;
-  height: auto;
+  height: 100%;
   background-image: image-set(
     './images/bg.png' 1x,
     './images/bg@2x.png' 2x,
@@ -130,7 +136,7 @@ li {
 }
 
 .option-item {
-  background-color: rgba(255, 255, 255, 0.084);
+  background-color: var(--color-text-3);
 }
 
 .option-item--active {
@@ -196,4 +202,140 @@ li {
 .navigation-link {
   color: var(--color-link-2);
   text-decoration: none;
+}
+
+/*  --iphone-8-plus */
+@media screen and (min-width: 414px) and (max-width: 414px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .banner-icon-link {
+    width: 24px;
+  }
+
+  .banner {
+    padding-top: 24px;
+  }
+
+  .banner__title {
+    font-size: 48px;
+  }
+
+  .access-list__item {
+    width: 32.33%;
+  }
+
+  .access-list__text {
+    font-size: 13px;
+  }
+  .option-item__per-year,
+  .option-item__week-label,
+  .option-item__best-offer {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 26px;
+  }
+
+  .navigation-link {
+    font-size: 16px;
+  }
+}
+
+/*  --iphone-11-pro */
+@media only screen and (min-width: 375px) and (max-width: 375px) {
+  .banner {
+    padding-top: 14px;
+  }
+  .banner-icon-link {
+    margin-bottom: 50px;
+  }
+  .option-item,
+  .option-item--active {
+    font-size: 14px;
+  }
+  .button {
+    margin-bottom: 30px;
+  }
+}
+
+/* --iphone-14-plus */
+@media only screen and (min-width: 428px) and (max-width: 428px) {
+  .banner {
+    padding-top: 10px;
+  }
+  .banner-icon-link {
+    margin-bottom: 120px;
+  }
+  .option-item,
+  .option-item--active {
+    font-size: 20px;
+  }
+
+  .access-list__item {
+    width: 32.33%;
+  }
+  .button {
+    margin-bottom: 30px;
+  }
+
+  .navigation-link {
+    font-size: 16px;
+  }
+
+  .access-list__text {
+    font-size: 14px;
+    padding: 5px;
+    top: 65%;
+  }
+}
+
+/* --iphone-14-pro-max */
+@media only screen and (min-width: 430px) and (max-width: 430px) {
+  .banner {
+    padding-top: 2px;
+  }
+  .banner-icon-link {
+    margin-bottom: 150px;
+  }
+  .option-item,
+  .option-item--active {
+    font-size: 20px;
+  }
+
+  .button {
+    margin-bottom: 20px;
+  }
+
+  .navigation-link {
+    font-size: 18px;
+  }
+}
+
+/* --iphone-14 */
+@media screen and (min-width: 390px) and (max-width: 390px) {
+  .banner {
+    padding-top: 28px;
+  }
+  .banner-icon-link {
+    margin-bottom: 157px;
+  }
+  .option-item,
+  .option-item--active {
+    font-size: 16px;
+  }
+
+  .button {
+    margin-bottom: 44px;
+  }
+  .access-list__item {
+    width: 32.33%;
+  }
+
+  .access-list__text {
+    font-size: 13px;
+    padding: 5px;
+    top: 65%;
+  }
 }

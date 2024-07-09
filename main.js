@@ -11,15 +11,15 @@ document.querySelector('#app').innerHTML = `
     <h1 class="banner__title">${tr.getUnlimitedAccess}</h1>
     <ul class="access-list">
       <li class="access-list__item">
-        <img class="access-list__img" href="#" src="./images/f1.png" srcset="./images/f1@2x.png 2x" srcset="./images/f1@3x.png 3x"/>
+        <img class="access-list__img" href="#" src="./images/f1.png" srcset="./images/f1@2x.png 2x, ./images/f1@3x.png 3x"/>
         <p class="access-list__text">${tr.unlimitedArtCreation}</p>
       </li>
       <li class="access-list__item">
-        <img class="access-list__img" href="#" src="./images/f2.png" srcset="./images/f2@2x.png 2x" srcset="./images/f2@3x.png 3x"/>
+        <img class="access-list__img" href="#" src="./images/f2.png" srcset="./images/f2@2x.png 2x, ./images/f2@3x.png 3x"/>
         <p class="access-list__text">${tr.exclusiveStyles}</p>
       </li>
       <li class="access-list__item">
-        <img class="access-list__img" href="#" src="./images/f3.png" srcset="./images/f3@2x.png 2x" srcset="./images/f3@3x.png 3x"/>
+        <img class="access-list__img" href="#" src="./images/f3.png" srcset="./images/f3@2x.png 2x, ./images/f3@3x.png 3x"/>
         <p class="access-list__text">${tr.magicAvatarsWith20Off}</p>
       </li>
     </ul>
