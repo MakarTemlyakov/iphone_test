@@ -54,9 +54,9 @@ img {
   min-height: 100%;
   height: 100%;
   background-image: image-set(
-    './images/bg.png' 1x,
-    './images/bg@2x.png' 2x,
-    './images/bg@3x.png' 3x
+    '../images/bg.png' 1x,
+    '../images/bg@2x.png' 2x,
+    '../images/bg@3x.png' 3x
   );
   background-repeat: no-repeat;
   background-size: cover;
